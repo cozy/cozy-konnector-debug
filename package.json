@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doubleface/cozy-konnector-error.git"
+    "url": "git+https://github.com/cozy/cozy-konnector-debug.git"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,7 @@
     "standalone": "cozy-konnector-standalone",
     "dev": "cozy-konnector-dev",
     "build": "webpack",
-    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/doubleface/cozy-konnector-error.git"
+    "deploy": "git-directory-deploy --username Cozy --email contact@cozycloud.cc --directory build/ --repo=https://$GITHUB_TOKEN@github.com/cozy/cozy-konnector-debug.git"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.1.1",

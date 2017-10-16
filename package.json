@@ -20,7 +20,7 @@
     "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/doubleface/cozy-konnector-error.git"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^4.0.1",
+    "copy-webpack-plugin": "^4.1.1",
     "git-directory-deploy": "^1.5.1",
     "webpack": "^3.6.0"
   }

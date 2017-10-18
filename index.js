@@ -53469,25 +53469,18 @@ return zhTw;
 "use strict";
 
 
-const {BaseKonnector, log} = __webpack_require__(449)
+const {BaseKonnector} = __webpack_require__(449)
 
 module.exports = new BaseKonnector(fields => {
   const timeout = Number(fields.timeout) || 8000
   if (timeout > 0) {
     return new Promise(resolve => {
       setTimeout(() => {
-        generateError(fields.error)
         resolve()
       }, timeout)
     })
   }
-
-  generateError(fields.error)
 })
-
-function generateError (error) {
-  if (error !== 'OK') log('error', error)
-}
 
 
 /***/ }),

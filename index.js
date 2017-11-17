@@ -1,14 +1,6 @@
 'use strict'
 
-const {BaseKonnector} = require('cozy-konnector-libs')
+const runner = require('./runner')
+const konnector = require('./konnector')
 
-module.exports = new BaseKonnector(fields => {
-  const timeout = Number(fields.timeout) || 8000
-  if (timeout > 0) {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve()
-      }, timeout)
-    })
-  }
-})
+module.exports = runner.run(konnector)

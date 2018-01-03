@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
   "name": "Debug",
+  "category": "other",
   "type": "node",
   "slug": "debug",
   "description": "debug connector",

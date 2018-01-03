@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "error",
+  "name": "debug",
   "type": "node",
-  "slug": "error",
-  "description": "error generation connector",
-  "source": "git://github.com/doubleface/cozy-konnector-error.git",
+  "slug": "debug",
+  "description": "debug connector",
+  "source": "git://github.com/cozy/cozy-konnector-debug.git",
   "permissions": {
     "accounts": {
       "description": "Required to get the account's data",
@@ -13,7 +13,7 @@
     }
   },
   "developer": {
-    "name": "doubleface",
+    "name": "cozy",
     "url": "cozy.io"
   }
 }

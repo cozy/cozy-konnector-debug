@@ -16,14 +16,13 @@ const konnectorErrors = [
 ];
 
 module.exports = new BaseKonnector(fields => {
-  if (!!fields.login && konnectorErrors.includes(fields.login.toUpperCase())) {
-    throw new Error(fields.login.toUpperCase())
-  }
-
-  const timeout = Number(fields.timeout) || 8000;
+  const timeout = Number(fields.timeout) || 1000;
   if (timeout > 0) {
     return new Promise(resolve => {
       setTimeout(() => {
+        if (!!fields.login && konnectorErrors.includes(fields.login.toUpperCase())) {
+          throw new Error(fields.login.toUpperCase())
+        }
         resolve();
       }, timeout);
     });

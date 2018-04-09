@@ -1,0 +1,27 @@
+{
+  "name": "cozy-konnector-error",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozy/cozy-konnector-debug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "cozy-konnector-libs": "^3.0.0-alpha.28"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "standalone": "cozy-konnector-standalone",
+    "dev": "cozy-konnector-dev",
+    "build": "webpack",
+    "deploy": "git-directory-deploy --username Cozy --email contact@cozycloud.cc --directory build/ --repo=https://$GITHUB_TOKEN@github.com/cozy/cozy-konnector-debug.git"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.1.1",
+    "git-directory-deploy": "^1.5.1",
+    "webpack": "^3.6.0"
+  }
+}

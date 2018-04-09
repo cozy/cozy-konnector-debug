@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "Debug",
+  "category": "other",
+  "type": "node",
+  "slug": "debug",
+  "description": "debug connector",
+  "source": "git://github.com/cozy/cozy-konnector-debug.git",
+  "permissions": {
+    "accounts": {
+      "description": "Required to get the account's data",
+      "type": "io.cozy.accounts"
+    },
+    "files": {
+      "description": "Required to save the bills",
+      "type": "io.cozy.files"
+    }
+  },
+  "developer": {
+    "name": "cozy",
+    "url": "cozy.io"
+  }
+}

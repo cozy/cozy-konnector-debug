@@ -8,6 +8,10 @@
     },
     "password": {
       "type": "password"
+    },
+    "timeout": {
+      "type": "text",
+      "default": "1000"
     }
   },
   "icon": "cozy.svg",

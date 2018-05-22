@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const { BaseKonnector } = require('cozy-konnector-libs');
+const { BaseKonnector } = require('cozy-konnector-libs')
 
 const konnectorErrors = [
   'CHALLENGE_ASKED',
@@ -16,18 +16,21 @@ const konnectorErrors = [
   'VENDOR_DOWN',
   'VENDOR_DOWN.BANK_DOWN',
   'VENDOR_DOWN.LINXO_DOWN'
-];
+]
 
 module.exports = new BaseKonnector(fields => {
-  const timeout = Number(fields.timeout) || 1000;
+  const timeout = Number(fields.timeout) || 1000
   if (timeout > 0) {
     return new Promise(resolve => {
       setTimeout(() => {
-        if (!!fields.login && konnectorErrors.includes(fields.login.toUpperCase())) {
+        if (
+          !!fields.login &&
+          konnectorErrors.includes(fields.login.toUpperCase())
+        ) {
           throw new Error(fields.login.toUpperCase())
         }
-        resolve();
-      }, timeout);
-    });
+        resolve()
+      }, timeout)
+    })
   }
-});
+})

@@ -1,4 +1,25 @@
 {
+  "categories": [],
+  "data_types": [],
+  "editor": "Cozy",
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    }
+  },
+  "icon": "cozy.svg",
+  "langs": ["en","fr"],
+  "locales": {
+    "en": {
+      "description": "Konnector used for debug purpose"
+    },
+    "fr": {
+      "description": "Konnecteur de débogage"
+    }
+  },
   "version": "1.0.0",
   "name": "Debug",
   "category": "other",
@@ -16,5 +37,6 @@
   "developer": {
     "name": "cozy",
     "url": "cozy.io"
-  }
+  },
+  "vendor_link": "http://cozy.io"
 }

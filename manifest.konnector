@@ -9,6 +9,10 @@
     "password": {
       "type": "password"
     },
+    "date": {
+      "type": "date",
+      "required": false
+    },
     "timeout": {
       "type": "text",
       "default": "1000"
@@ -18,10 +22,20 @@
   "langs": ["en","fr"],
   "locales": {
     "en": {
-      "description": "Konnector used for debug purpose"
+      "description": "Konnector used for debug purpose",
+      "fields": {
+        "date": {
+          "label": "Date"
+        }
+      }
     },
     "fr": {
-      "description": "Konnecteur de débogage"
+      "description": "Konnecteur de débogage",
+      "fields": {
+        "date": {
+          "label": "Date"
+        }
+      }
     }
   },
   "version": "1.0.0",

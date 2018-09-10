@@ -1,3 +1,5 @@
+__This repository is archived. cozy-konnector-debug has moved to [https://github.com/konnectors/debug](https://github.com/konnectors/debug)
+
 [Cozy][cozy] <YOUR SUPER NEW KONNECTOR NAME>
 =======================================
 
